@@ -72,6 +72,20 @@
           "type": "python"
         }
       ]
+    },
+    {
+      "id": "testing-and-debugging-python",
+      "title": "Testing and Debugging Python Functions",
+      "description": "Practice testing a Python function with assert and debugging it based on test results.",
+      "path": "assignments/testing-and-debugging-python",
+      "dueDate": "2026-12-04",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
