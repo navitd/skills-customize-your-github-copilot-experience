@@ -11,6 +11,8 @@ Assignments live in `assignments/<id>/`, and the website reads `config.json` to 
 
 If the user hasn't specified, ask what programming concept the assignment should cover.
 
+> Read [references/assignment-guide.md](references/assignment-guide.md) for guidance on difficulty, scope, and when to include starter code.
+
 ## Step 2: Create the Assignment
 
 1. Create `assignments/<kebab-case-id>/README.md` following the [assignment template](../../../templates/assignment-template.md)
@@ -18,7 +20,17 @@ If the user hasn't specified, ask what programming concept the assignment should
 
 ## Step 3: Register with the Website
 
-Update `config.json` with the assignment entry and any starter-code or data-file attachments.
+Use the bundled scripts — do NOT edit `config.json` manually.
+
+**Register the assignment:**
+
+    node .github/skills/new-assignment/scripts/update-config.js <id> "<title>" "<description>"
+
+**Register each file as an attachment** (starter code, data files, etc.):
+
+    node .github/skills/new-assignment/scripts/add-attachment.js <id> "<display-name>" <filename> <type>
+
+Common types: `python`, `csv`, `json`, `txt`, `html`
 
 ## Step 4: Verify
 
